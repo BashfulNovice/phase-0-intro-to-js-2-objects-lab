@@ -1,12 +1,12 @@
 // Write your solution in this file!
 
-var employee = {
+let employee = {
     name: "",
     address: ""
 };
 
 function updateEmployeeWithKeyAndValue(employee, key, value) {
-   var newEmp = {...employee};
+   let newEmp = {...employee};
    newEmp[key] = value;
    return newEmp;
 }
@@ -17,7 +17,7 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
 }
 
 function deleteFromEmployeeByKey(employee, key) {
-    var newEmp = {...employee};
+    let newEmp = {...employee};
     delete newEmp[key]; 
     return newEmp
 }
